@@ -10,4 +10,12 @@ They are not meant to be a guide for anybody; I wrote these examples while study
 ``` 
 npm install learnyounode --global 
 ```
- 
+
+don't forget to `sudo` if you're on mac or linux. 
+
+Then, if you want to start learning NodeJs, 
+
+```
+learnyounode
+```
+and follow the instructions.
