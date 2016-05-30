@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-function filteredLs(directoryName, fileExtension, callback) {
+module.exports = function (directoryName, fileExtension, callback) {
+    
     let filteredList = [];
     fs.readdir(directoryName, (err, files) => {
         if (err) {
@@ -15,7 +16,4 @@ function filteredLs(directoryName, fileExtension, callback) {
         });
         callback(null, filteredList); //first argument (err) is null 
     });
-}
-
-//if you require this module, it will point to filteredLs function
-module.exports = filteredLs;
+};
