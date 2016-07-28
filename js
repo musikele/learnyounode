@@ -1,0 +1,1 @@
+file che non è js 
